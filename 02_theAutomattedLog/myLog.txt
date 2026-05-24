@@ -1,0 +1,1 @@
+log entry for user : This computer is running on platform : win32.
