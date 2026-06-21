@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer's Blog Portfolio</title>
+</head>
+<body>
+    <h1>My Developer Blog Portfolio</h1>
+    <a href="/admin/create">Write New Post</a>
+    <hr>
+
+    <% posts.forEach(post =>{ %>
+        <h2><%= post.title %></h2>
+        <p><%= post.content %></p>
+        <img src="/blog-images/<%= post.imageName %>" alt="Banner">
+        <hr> 
+        <% })%>
+</body>
+</html>
